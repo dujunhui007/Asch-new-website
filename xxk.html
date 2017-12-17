@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery tab切换</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        .downloadsContainerLeft{
+            margin-left: 150px;
+            margin-top: 150px;
+        }
+        /*清浮动---clearfix*/
+        .clearfix {
+            *zoom: 1;
+        }
+        .clearfix:after {
+            content: "";
+            clear: both;
+            display: block;
+            height: 0;
+            font-size: 0;
+            visibility: hidden;
+        }
+        .dlist {
+            border:1px solid #d9d9d9;
+            width: 275px;
+            height: 32px;
+        }
+        .dlist li:first-child{
+            border-left: none;
+        }
+        .dlist li{
+            list-style: none;
+            width: 68px;
+            height: 32px;
+            border-left:1px solid #d9d9d9;
+            font-size: 14px;
+            line-height: 32px;
+            text-align: center;
+            float: left;
+            cursor: pointer;
+            -webkit-user-select: none;
+        }
+        .dlsit-list{
+            width: 275px;
+        }
+        .dlsit-list li{
+            list-style: none;
+            width: 275px;
+            border:1px solid #ccc;
+            height: 200px;
+            border-top: none;
+        }
+        .downloadsContainerLeft .dlist li.active{
+            font-weight: bold;
+            color: red;
+            border-top: 2px solid red;
+            position: relative;
+            top:-1px;
+            height: 31px;
+        }
+        .dlsit-list li:first-child{
+            display: block;
+        }
+        .dlsit-list li{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="downloadsContainerLeft">
+    <ul class="dlist clearfix">
+        <li class="active">电影</li>
+        <li>电脑</li>
+        <li>冰箱</li>
+        <li>空调</li>
+    </ul>
+    <ul class="dlsit-list">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $(".dlist").on("click","li",function(){
+      // 设index为当前点击
+      var index = $(this).index();
+      // 点击添加样式利用siblings清除其他兄弟节点样式
+      $(this).addClass("active").siblings().removeClass("active");
+      // 同理显示与隐藏
+      $(this).parents(".downloadsContainerLeft").find(".dlsit-list li").eq(index).show().siblings().hide();
+    })
+  })
+</script>
+</body>
+</html>
