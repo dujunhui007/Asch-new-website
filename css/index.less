@@ -122,6 +122,10 @@ nav {
   width: 100%;
   //height: 100%;
   position: relative;
+  //#canvas{
+  //  opacity: 0.5;
+  //}
+
   .aschLogo {
     position: absolute;
     width: 0px;
@@ -132,7 +136,7 @@ nav {
     animation-name: homeLogoAmimate;
     animation-duration: 1.5s;
     animation-timing-function: linear;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     @keyframes homeLogoAmimate {
       0% {
@@ -196,7 +200,10 @@ nav {
   width: 100%;
   height: 100%;
   canvas {
-    background: #1d4277;
+    //background: url("../images/advantagesBackground.png") no-repeat center;
+    //background-size: cover;
+    background: rgb(28, 68, 130);
+
   }
   p {
     width: 100%;
@@ -344,7 +351,7 @@ ul.homeLinks {
   }
   .aschVideo {
     width: 100%;
-    height: 200px;
+    //height: 200px;
     background: #f5f5f5;
     position: relative;
     img {
@@ -358,14 +365,14 @@ ul.homeLinks {
       background: url("../images/videoPlay.png") no-repeat center;
       background-size: cover;
       position: absolute;
-      top: 60px;
+      top: calc(~"50% - 30px");
       left: calc(~"50% - 20px");
       cursor: pointer;
     }
     p {
       position: absolute;
       left: 0;
-      top: 120px;
+      top: calc(~"50% + 30px");
       width: 100%;
       text-align: center;
       color: #fff;
@@ -468,7 +475,7 @@ ul.homeLinks {
     background: #727170;
     padding: 0 15%;
     box-sizing: border-box;
-    //opacity: 0.5;
+    opacity: 0.9;
     z-index: 4;
     ul {
       opacity: 1;
@@ -482,12 +489,15 @@ ul.homeLinks {
       li:nth-child(1) {
         background: url("../images/advantagecontentBack1.png") no-repeat center;
         background-size: cover;
+        i {
+
+        }
       }
       li:nth-child(2) {
         background: url("../images/advantagecontentBack2.png") no-repeat center;
         background-size: cover;
         p.advantagesContainerText1 {
-          top: 50%;
+          top: 60%;
         }
         p.advantagesContainerText2 {
           top: 42%;
@@ -505,7 +515,7 @@ ul.homeLinks {
         background: url("../images/advantagecontentBack5.png") no-repeat center;
         background-size: cover;
         p.advantagesContainerText1 {
-          top: 50%;
+          top: 60%;
         }
         p.advantagesContainerText2 {
           top: 40%;
@@ -519,12 +529,12 @@ ul.homeLinks {
       li:hover {
         background: #5373bd;
         i {
-          -webkit-transform: translateY(-10px);
-          transform: rotateY(-10px);
+          -webkit-transform: translateY(-15px);
+          transform: rotateY(-15px);
         }
         span {
-          -webkit-transform: translateY(-10px);
-          transform: rotateY(-10px);
+          -webkit-transform: translateY(-30px);
+          transform: rotateY(-30px);
         }
         p {
           -webkit-transform: translateY(-10px);
@@ -551,7 +561,7 @@ ul.homeLinks {
         i {
           display: block;
           position: absolute;
-          top: 15%;
+          top: 20%;
           left: calc(~"50% - 20px");
           width: 40px;
           height: 40px;
@@ -562,7 +572,7 @@ ul.homeLinks {
         }
         span {
           position: absolute;
-          top: 38%;
+          top: 50%;
           left: calc(~"50% - 15px");
           display: block;
           width: 30px;
@@ -573,7 +583,7 @@ ul.homeLinks {
         }
         p {
           position: absolute;
-          top: 50%;
+          top: 62%;
           left: 0;
           width: 100%;
           color: #fff;
@@ -665,17 +675,19 @@ ul.homeLinks {
 #downloads {
   position: relative;
   width: 100%;
-  //height: 100%;
-  padding: 50px 15% 50px 15%;
+  height: 100%;
+  padding: 50px 15% 70px 15%;
   box-sizing: border-box;
   background: #f5f9ff;
   .downloadsContainer {
     display: flex;
+    width: 100%;
+    height: 60%;
     justify-content: space-between;
     .downloadsContainerLeft {
       z-index: 3;
       width: 60%;
-      height: 450px;
+      height: 100%;
       background: lightskyblue;
       .dlist {
         border: 1px solid #d9d9d9;
@@ -684,21 +696,29 @@ ul.homeLinks {
         display: flex;
         justify-content: space-between;
         border-right: none;
+
         li:first-child {
           border-left: none;
         }
-        li:last-child{
+        li:last-child {
           border-right: none;
         }
         li:nth-child(3) {
-          padding-top: 5px;
-          box-sizing: border-box;
-          line-height: 25px;
+          //padding-top: 5px;
+          //box-sizing: border-box;
+          //line-height: 25px;
+        }
+        @media screen and (max-width: 1920px) {
+          li:nth-child(3) {
+            padding-top: 5px;
+            box-sizing: border-box;
+            line-height: 25px;
+          }
         }
         li.active {
           color: #fff;
           //font-weight: bold;
-          background: #547dd6;
+          background: #567fdc;
           top: -1px;
         }
         li {
@@ -717,7 +737,7 @@ ul.homeLinks {
       .dlsit-list {
         background: #fff;
         width: calc(~"100% - 30x");
-        height: 388px;
+        height: 100%;
         box-shadow: 0 0 10px #ccc;
         box-sizing: border-box;
         border-right: none;
@@ -731,30 +751,145 @@ ul.homeLinks {
           border-right: none;
         }
         li {
+          position: relative;
           width: 100%;
-          height: 388px;
+          height: 100%;
           display: none;
+          padding: 50px;
+          box-sizing: border-box;
+          h4 {
+            font-size: 25px;
+            color: #6b7281;
+          }
+          .dlistContainer {
+            padding-left: 20px;
+            box-sizing: border-box;
+            border-left: 2px solid #ccc;
+            margin: 40px 2px;
+            span {
+              display: block;
+              color: #000;
+              font-size: 16px;
+            }
+          }
+          p {
+            width: 90%;
+            height: 25px;
+            line-height: 25px;
+            text-align: left;
+            color: #a9abb4;
+            font-size: 16px;
+          }
+          .dlistBtns {
+            width: 100%;
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            a:nth-child(1){
+              width: 30%;
+              border-radius: 4px;
+            }
+            a {
+              display: inline-block;
+              width: 20%;
+              height: 50px;
+              line-height: 50px;
+              text-align: center;
+              margin: 10px;
+              background: #567fdc;
+              color: #fff;
+            }
+          }
         }
+        @media screen and (max-width: 1920px) {
+          li{
+            padding: 20px 30px;
+            .dlistContainer {
+              margin: 10px 2px;
+            }
+            p{
+              height: 20px;
+              line-height: 20px;
+              font-size: 14px;
+            }
+            .dlistBtns {
+              width: 100%;
+              position: absolute;
+              bottom: 30px;
+              left: 20px;
+              a {
+                display: inline-block;
+                width: 20%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                margin: 10px;
+                background: #567fdc;
+                color: #fff;
+                border-radius: 4px;
+              }
+            }
+          }
 
+        }
       }
 
     }
     .downloadsContainerRight {
       width: 40%;
-      height: 450px;
-      background: url("../images/downloadBack.png") no-repeat center ;
+      height: calc(~"100% + 62px");
+      background: url("../images/downloadBack.png") no-repeat center;
       background-size: cover;
-      box-shadow: 0 0 10px #ccc,0 0 10px #ccc,0 0 10px #ccc,0 0 0 red;
+      box-shadow: 0 0 10px #ccc, 0 0 10px #ccc, 0 0 10px #ccc, 0 0 0 red;
       z-index: 2;
     }
   }
 
 }
 
-.section:nth-child(2n) {
-  background: red;
-}
-
-.section:nth-child(2n+1) {
-  background: green;
+#links{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 15% 60px 15%;
+  background: #363839;
+  height: 520px;
+  .linksContainer{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    .linksItems{
+      span{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: left;
+        font-size: 18px;
+      }
+      ul{
+        li:last-child{
+          border-bottom: none;
+        }
+        li{
+          width: 200px;
+          height: 50px;
+          line-height: 50px;
+          text-align: left;
+          border-bottom: 1px solid #4f5051;
+          i{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            vertical-align: baseline;
+            background: url("../images/arrowRight.png") no-repeat center;
+            background-size: cover;
+            margin-right: 18px;
+          }
+          a{
+            color: #cdcdcd;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }

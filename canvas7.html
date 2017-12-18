@@ -1,0 +1,96 @@
+<!DOCTYOE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        div{
+            margin-left: 50;
+            position: relative;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>1. 绘制矩形</p>
+    <canvas id="1" width="500" height="500" style="border:2px solid blue"> </canvas>
+</div>
+<div>
+    <p>2. 绘制线条</p>
+    <canvas id="2" width="300" height="300" style="border:2px solid blue"> </canvas>
+</div>
+<div>
+    <p>3. 绘制圆形</p>
+    <canvas id="3" width="300" height="300" style="border:2px solid blue"> </canvas>
+</div>
+<div>
+    <p>4. 绘制渐变条</p>
+    <canvas id="4" width="300" height="50"> </canvas>
+</div>
+<div>
+    <p>5. 绘制图片</p>
+    <canvas id="5" width="300" height="200" style="border:2px solid blue"> </canvas>
+</div>
+<div>
+    <p>6. 绘制多边形</p>
+    <canvas id="6" width="300" height="200" style="border:2px solid blue"> </canvas>
+</div>
+
+
+</body>
+<script type="text/javascript">
+  var c=document.getElementById("1");
+  var p=c.getContext("2d");
+  p.fillStyle="#FF0000";
+  p.fillRect(0,0,300,300);
+  p.fillStyle="rgba(0,0,255,0.5)";
+  p.fillRect(200,200,5000,500);
+  p.close();
+</script>
+<script type="text/javascript">
+  var c=document.getElementById("2");
+  var p=c.getContext("2d");
+  p.moveTo(10,10);
+  p.lineTo(350,100);
+  p.lineTo(10,100);
+  p.stroke();
+</script>
+<script type="text/javascript">
+  var c=document.getElementById("3");
+  var p=c.getContext("2d");
+  p.fillStyle="#FF0000";
+  p.beginPath();
+  p.arc(250,250,15,10,Math.PI*2,true);
+  p.closePath();
+  p.fill();
+</script>
+<script type="text/javascript">
+  var c=document.getElementById("4");
+  var p=c.getContext("2d");
+
+  var grd=p.createLinearGradient(0,0,300,10);
+  grd.addColorStop(0.1,'rgb(255,255,0)');
+  grd.addColorStop(0.4,"#0a95f0");
+  p.fillStyle=grd;
+  p.fillRect(0,0,300,10);
+</script>
+<script type="text/javascript">
+  var c=document.getElementById("5");
+  var p=c.getContext("2d");
+
+  var img=new Image();
+  img.src="C:/Users/acer_pc/Pictures/tree.png";
+  p.drawImage(img,0,0);
+</script>
+<script type="text/javascript">
+  var c=document.getElementById('6');
+  var p=c.getContext("2d");
+
+  p.fillStyle="yellow";
+  p.moveTo(10,10);
+  p.lineTo(150,50);
+  p.lineTo(10,50);
+  p.lineTo(20,30);
+  p.fill();
+</script>
+<html>
