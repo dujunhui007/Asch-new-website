@@ -32,5 +32,14 @@ $(document).ready(
     $(this).addClass("active").siblings().removeClass("active");
     // 同理显示与隐藏
     $(this).parents(".downloadsContainerLeft").find(".dlsit-list li").eq(index).show().siblings().hide();
+  }),
+
+  $(".homeLinks").click(function () {
+    window.location.href = "aschVideo.html";
+  }),
+
+  $("#introduction .aschVideo .topVideo").click(function () {
+    window.location.href = "aschVideo.html";
   })
+
 );
