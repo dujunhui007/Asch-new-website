@@ -6,6 +6,7 @@ $(document).ready(
   $(window).scroll(function () {
     var winHeight = $(this).height();
     var winWidth = $(this).width();
+    var homeHeight=$("home").height();
     var hrLine = $("#advantages hr");
     var sTop = $(this).scrollTop();
     var hrLineTop = $(hrLine).offset().top;
@@ -13,17 +14,26 @@ $(document).ready(
       $("#advantages hr").addClass("hrAnimate")
     }
 
+    if($(window).scrollTop()>(homeHeight+200)){
+      $(".toTop").css("display","block")
+    }else {
+      $(".toTop").css("display","none")
+    }
+
+
+
     if ($(window).scrollTop() > 0) {
-      $("nav").css("background", "#fff");
+      $("nav").css("background", "#fff").css("box-shadow","0 0 5px #ccc");
       $("nav .navRight .downloadWhitePaper").addClass("downloadWhitePaperTwo").removeClass("downloadWhitePaperOne");
       $("nav .navLeft  .navLogo").addClass("replaceLogoOne").removeClass("replaceLogoTwo");
       $("nav .equalThan ").addClass("moreThan").removeClass("equalThan");
     } else {
-      $("nav").css("background", "transparent");
+      $("nav").css("background", "transparent").css("box-shadow","0 0 0");
       $("nav .navRight .downloadWhitePaper").addClass("downloadWhitePaperOne").removeClass("downloadWhitePaperTwo");
       // $("nav .navRight .downloadWhitePaper").css("color", "#1c49ae");
+      $("nav .navLeft  .navLogo").addClass("replaceLogoTwo").removeClass("replaceLogoOne");
       $("nav .moreThan ").addClass("equalThan").removeClass("moreThan");
-      $("nav .navLeft  .navLogo").addClass("replaceLogoTwo").removeClass("  replaceLogoOne");
+
     }
   }),
 

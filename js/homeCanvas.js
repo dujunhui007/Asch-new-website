@@ -65,29 +65,29 @@ function canvasLine(t, cArr, clw, cColor) {
     t++;
   }
 }
-
-setTimeout(function () {
-  canvasLine(t, canvasArr11, clw1, cColor);
-  canvasLine(t, canvasArr12, clw1, cColor);
-},0);
-
-setTimeout(function () {
-  canvasLine(t, canvasArr21, clw1, cColor);
-  canvasLine(t, canvasArr22, clw1, cColor);
-},400);
-
-
-setTimeout(function () {
-  canvasLine(t, canvasArr31, clw1, cColor);
-  canvasLine(t, canvasArr32, clw1, cColor);
-}, 600);
-
-setTimeout(function () {
-  canvasLine(t, canvasArr41, clw1, cColor);
-  canvasLine(t, canvasArr42, clw1, cColor);
-}, 750);
-
-setTimeout(function () {
-  canvasLine(t, canvasArr51, clw2, cColor);
-  canvasLine(t, canvasArr52, clw2, cColor);
-}, 900);
+//
+// setTimeout(function () {
+//   canvasLine(t, canvasArr11, clw1, cColor);
+//   canvasLine(t, canvasArr12, clw1, cColor);
+// },0);
+//
+// setTimeout(function () {
+//   canvasLine(t, canvasArr21, clw1, cColor);
+//   canvasLine(t, canvasArr22, clw1, cColor);
+// },400);
+//
+//
+// setTimeout(function () {
+//   canvasLine(t, canvasArr31, clw1, cColor);
+//   canvasLine(t, canvasArr32, clw1, cColor);
+// }, 600);
+//
+// setTimeout(function () {
+//   canvasLine(t, canvasArr41, clw1, cColor);
+//   canvasLine(t, canvasArr42, clw1, cColor);
+// }, 750);
+//
+// setTimeout(function () {
+//   canvasLine(t, canvasArr51, clw2, cColor);
+//   canvasLine(t, canvasArr52, clw2, cColor);
+// }, 900);
