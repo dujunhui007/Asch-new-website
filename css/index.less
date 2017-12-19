@@ -9,88 +9,127 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  height: 70px;
+  line-height: 70px;
   background: transparent;
-  padding: 0 10%;
+  padding: 0 15%;
   box-sizing: border-box;
   z-index: 999;
   .navLeft {
     display: inline-block;
     height: 50px;
-    margin-top: 5px;
+    margin-top: 10px;
     span {
       display: block;
     }
     .navLogo {
-      width: 110px;
-      height: 50px;
-      background: url("../images/aschLogo.png") no-repeat center;
+      width: 100px;
+      height: 25px;
+      margin-top: 12px;
+    }
+    .replaceLogoOne{
+      background: url("../images/aschLogo1.png") no-repeat center;
       background-size: cover;
     }
+    .replaceLogoTwo{
+      background: url("../images/aschLogo2.png") no-repeat center;
+      background-size: cover;
+    }
+
   }
   .navRight {
+    position: relative;
     width: 72%;
-    height: 58px;
-    text-align: right;
+    height: 70px;
+    text-align: left;
     display: inline-block;
     float: right;
     background: transparent;
-    .navRightItems {
-      width: 100%;
+    .equalThan {
+      //width: 100%;
+      height: 100%;
       font-size: 0;
+      display: inline-block;
       li:hover {
-        border-top: 2px solid #fff;
+        border-top: 2px solid #567fdc;
+        a{
+          color: #567fdc;
+        }
       }
       li {
         /* width: 12%; */
-        height: 58px;
-        line-height: 58px;
+        height: 68px;
+        line-height: 68px;
         text-align: center;
         display: inline-block;
         //vertical-align: left;
         cursor: pointer;
         font-size: 16px;
-        /* padding: 0 10px; */
-        padding-right: 20px;
         border-top: 2px solid transparent;
         a {
+          display: block;
+          height: 100%;
           color: #fff;
+          font-size: 16px;
+          padding-right: 20px;
         }
       }
     }
     .moreThan {
-      background: #fff;
-      //color: #000;
-      .navRight {
-        background: #fff;
-        li {
-          background: #fff;
-          a {
-            color: #000;
-          }
+      //width: 100%;
+      height: 100%;
+      font-size: 0;
+      display: inline-block;
+      li:hover {
+        border-top: 2px solid #567fdc;
+        a{
+          color: #567fdc;
         }
       }
-      li:hover {
-        border-top: 2px solid #899ebf;
+      li {
+        /* width: 12%; */
+        height: 68px;
+        line-height: 68px;
+        text-align: center;
+        display: inline-block;
+        //vertical-align: left;
+        cursor: pointer;
+        font-size: 16px;
+        border-top: 2px solid transparent;
+        a {
+          display: block;
+          height: 100%;
+          color: #000;
+          font-size: 16px;
+          padding-right: 20px;
+        }
       }
     }
-    .equalThan {
-      background: transparent;
-      .navRight {
-        background: transparent;
-        li {
-          background: transparent;
-          a {
-            color: #fff;
-          }
-        }
-      }
-      li:hover {
-        border-top: 2px solid #fff;
-      }
+    .downloadWhitePaperOne{
+      width: 120px;
+      height: 20px;
+      padding: 0 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-left: 50px;
+      color: #fff;
+      background: #567fdc;
+    }
+    .downloadWhitePaperTwo{
+      width: 120px;
+      height: 20px;
+      padding: 0 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-left: 50px;
+      color: #fff;
+      background: #1c49ae;
     }
   }
+
+
+
+
 }
 
 .toTop:hover {
@@ -122,11 +161,7 @@ nav {
 
 .section {
   width: 100%;
-  //height: 100%;
   position: relative;
-  //#canvas{
-  //  opacity: 0.5;
-  //}
 
   .aschLogo {
     position: absolute;
@@ -201,10 +236,12 @@ nav {
 #home {
   width: 100%;
   height: 100%;
+box-shadow: 0 0 10px #000;
+  z-index: 2;
   canvas {
-    //background: url("../images/advantagesBackground.png") no-repeat center;
-    //background-size: cover;
-    background: rgb(28, 68, 130);
+    background: url("../images/homeBack.jpg") no-repeat center;
+    background-size: cover;
+    //background: rgb(28, 68, 130);
 
   }
   p {
@@ -241,8 +278,9 @@ ul.homeLinks {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
   li:hover {
-    border-bottom: 2px solid blue;
+    border-bottom: 3px solid #567fdc;
     background: #fff;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -250,6 +288,31 @@ ul.homeLinks {
       span {
         transform: rotate(360deg);
       }
+    }
+    z-index: 3;
+  }
+  li:nth-child(1){
+    i{
+      background: url("../images/gitHub.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+  li:nth-child(2){
+    i{
+      background: url("../images/gitHub.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+  li:nth-child(3){
+    i{
+      background: url("../images/gitHub.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+  li:nth-child(4){
+    i{
+      background: url("../images/gitHub.png") no-repeat center;
+      background-size: cover;
     }
   }
   li {
@@ -946,6 +1009,12 @@ ul.homeLinks {
   width: 100%;
   height: 100%;
   background: lightskyblue;
+}
+
+#media{
+  width: 100%;
+  height: 100%;
+  background: cornsilk;
 }
 
 #links {

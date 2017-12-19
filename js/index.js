@@ -15,13 +15,15 @@ $(document).ready(
 
     if ($(window).scrollTop() > 0) {
       $("nav").css("background", "#fff");
-      $("nav .navRightItems li a").css("color", "#000");
-      $("nav .navRightItems ").addClass("moreThan").removeClass("equalThan");
+      $("nav .navRight .downloadWhitePaper").addClass("downloadWhitePaperTwo").removeClass("downloadWhitePaperOne");
+      $("nav .navLeft  .navLogo").addClass("replaceLogoOne").removeClass("replaceLogoTwo");
+      $("nav .equalThan ").addClass("moreThan").removeClass("equalThan");
     } else {
       $("nav").css("background", "transparent");
-      $("nav .navRightItems li a").css("color", "#fff");
-      $("nav .navRightItems ").addClass("equalThan").removeClass("moreThan");
-      // $('.deScroll').css('overflow', 'hidden')
+      $("nav .navRight .downloadWhitePaper").addClass("downloadWhitePaperOne").removeClass("downloadWhitePaperTwo");
+      // $("nav .navRight .downloadWhitePaper").css("color", "#1c49ae");
+      $("nav .moreThan ").addClass("equalThan").removeClass("moreThan");
+      $("nav .navLeft  .navLogo").addClass("replaceLogoTwo").removeClass("  replaceLogoOne");
     }
   }),
 
