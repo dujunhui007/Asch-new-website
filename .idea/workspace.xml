@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="286614d7-02f8-436d-90b2-74fa6e72b86d" name="Default" comment="" />
+    <list default="true" id="286614d7-02f8-436d-90b2-74fa6e72b86d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.less" afterPath="$PROJECT_DIR$/css/index.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.min.css" afterPath="$PROJECT_DIR$/css/index.min.css" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -81,8 +85,8 @@
           <file leaf-file-name="index.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/index.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="1591" column="28" lean-forward="false" selection-start-line="1591" selection-start-column="28" selection-end-line="1591" selection-end-column="28" />
+                <state relative-caret-position="240">
+                  <caret line="1851" column="35" lean-forward="true" selection-start-line="1851" selection-start-column="35" selection-end-line="1851" selection-end-column="35" />
                   <folding>
                     <element signature="e#265#712#0" expanded="false" />
                     <element signature="e#918#1558#0" expanded="false" />
@@ -153,10 +157,10 @@
                     <element signature="e#43161#43215#0" expanded="false" />
                     <element signature="e#43245#43499#0" expanded="false" />
                     <element signature="e#43534#43668#0" expanded="false" />
-                    <element signature="e#44787#46324#0" expanded="false" />
-                    <element signature="e#46588#47540#0" expanded="false" />
-                    <element signature="e#49707#49783#0" expanded="false" />
-                    <element signature="e#49790#50020#0" expanded="false" />
+                    <element signature="e#44786#46323#0" expanded="false" />
+                    <element signature="e#46587#47539#0" expanded="false" />
+                    <element signature="e#49706#49782#0" expanded="false" />
+                    <element signature="e#49789#50019#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -215,8 +219,8 @@
         <option value="$PROJECT_DIR$/js/aschVideoIndex.js" />
         <option value="$PROJECT_DIR$/js/homeCanvas.js" />
         <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/css/index.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/index.less" />
       </list>
     </option>
   </component>
@@ -351,16 +355,15 @@
       <workItem from="1513311564465" duration="804000" />
       <workItem from="1513327165478" duration="49996000" />
       <workItem from="1513522876421" duration="36938000" />
-      <workItem from="1513650505493" duration="43435000" />
+      <workItem from="1513650505493" duration="43808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135583000" />
+    <option name="totallyTimeSpent" value="135956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -371,7 +374,7 @@
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14955357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14955357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -745,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="1591" column="28" lean-forward="false" selection-start-line="1591" selection-start-column="28" selection-end-line="1591" selection-end-column="28" />
+        <state relative-caret-position="240">
+          <caret line="1851" column="35" lean-forward="true" selection-start-line="1851" selection-start-column="35" selection-end-line="1851" selection-end-column="35" />
           <folding>
             <element signature="e#265#712#0" expanded="false" />
             <element signature="e#918#1558#0" expanded="false" />
@@ -817,10 +820,10 @@
             <element signature="e#43161#43215#0" expanded="false" />
             <element signature="e#43245#43499#0" expanded="false" />
             <element signature="e#43534#43668#0" expanded="false" />
-            <element signature="e#44787#46324#0" expanded="false" />
-            <element signature="e#46588#47540#0" expanded="false" />
-            <element signature="e#49707#49783#0" expanded="false" />
-            <element signature="e#49790#50020#0" expanded="false" />
+            <element signature="e#44786#46323#0" expanded="false" />
+            <element signature="e#46587#47539#0" expanded="false" />
+            <element signature="e#49706#49782#0" expanded="false" />
+            <element signature="e#49789#50019#0" expanded="false" />
           </folding>
         </state>
       </provider>
