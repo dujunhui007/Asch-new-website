@@ -11,39 +11,41 @@
     <link rel="stylesheet" href="./css/commons.min.css">
     <link rel="stylesheet" href="./css/index.min.css">
 </head>
-<body class="deScroll">
+<body class="deScroll" >
 <nav>
-    <a href="index.html" class="navLeft">
-        <span class="navLogo replaceLogoTwo"></span>
-    </a>
-    <div class="navRight">
-        <ul class="equalThan">
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#introduction">Introduction</a>
-            </li>
-            <li>
-                <a href="#features">Features</a>
-            </li>
-            <li>
-                <a href="#advantages">Advantages</a>
-            </li>
-            <li>
-                <a href="#scenarios">Scenarios</a>
-            </li>
-            <li>
-                <a href="#downloads">Downloads</a>
-            </li>
-            <li>
-                <a href="#links">Links</a>
-            </li>
-            <li>
-                <a href="#media">Media</a>
-            </li>
-        </ul>
-        <a class="downloadWhitePaper downloadWhitePaperOne" href="http://asch-public.oss-cn-beijing.aliyuncs.com/asch.io/Asch%20Whitepaper.pdf">Asch Whitepaper</a>
+    <div class="navContainer">
+        <a href="index.html" class="navLeft">
+            <span class="navLogo replaceLogoTwo"></span>
+        </a>
+        <div class="navRight">
+            <ul class="equalThan">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#introduction">Introduction</a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#advantages">Advantages</a>
+                </li>
+                <li>
+                    <a href="#scenarios">Scenarios</a>
+                </li>
+                <li>
+                    <a href="#downloads">Downloads</a>
+                </li>
+                <li>
+                    <a href="#links">Links</a>
+                </li>
+                <li>
+                    <a href="#media">Partners</a>
+                </li>
+            </ul>
+            <a class="downloadWhitePaper downloadWhitePaperOne" href="http://asch-public.oss-cn-beijing.aliyuncs.com/asch.io/Asch%20Whitepaper.pdf">Whitepaper</a>
+        </div>
     </div>
 </nav>
 <a href="#home" class="toTop">
@@ -64,7 +66,7 @@
                 <span></span>
             </div>
             <p>GitHub</p>
-            <p>Click into the page</p>
+            <p>Asch source code repository</p>
             <span class="rightLine"></span>
         </a>
     </li>
@@ -74,8 +76,8 @@
                 <i></i>
                 <span></span>
             </div>
-            <p>Explore</p>
-            <p>Click into the page</p>
+            <p>Explorer</p>
+            <p>Blockchain explorer of Asch</p>
             <span class="rightLine"></span>
         </a>
     </li>
@@ -86,18 +88,18 @@
                 <span></span>
             </div>
             <p>Wallet</p>
-            <p>Click into the page</p>
+            <p>Asch online wallet</p>
             <span class="rightLine"></span>
         </a>
     </li>
     <li class="homeToVideo">
-        <a href="aschVideo.html">
+        <a href="http://bbs.asch.io/">
             <div class="linksIcon">
                 <i></i>
                 <span></span>
             </div>
-            <p>Video</p>
-            <p>Click into the page</p>
+            <p>Forum</p>
+            <p>Asch forum</p>
         </a>
     </li>
 </ul>
@@ -155,6 +157,7 @@
         </div>
         <div class="aschVideo">
             <div class="aschVideoContainer">
+                <div class="aschVideoContainerShade"></div>
                 <img src="images/aschVideo.png" alt="aschVideo">
             </div>
             <span class="topVideo"></span>
@@ -169,6 +172,8 @@
         <p>Next Generation Decentralized Application Platform</p>
     </div>
     <div class="featuresTopContainer">
+        <div class="featuresTopBorderOne"></div>
+        <div class="featuresTopBorderTwo"></div>
         <div class="featuresTop">
             <h4>Public chain</h4>
             <p>Asch's public chain is mainly responsible for data sharing between infrastructure and applications; it is
@@ -218,8 +223,6 @@
                 </li>
             </ul>
         </div>
-        <div class="featuresTopBorderOne"></div>
-        <div class="featuresTopBorderTwo"></div>
     </div>
 </div>
 <div class="section" id="featuresTwo">
@@ -290,7 +293,7 @@
     </div>
 </div>
 <div class="section" id="advantages">
-    <div class="sectionTop">
+    <div class="sectionTop advantagesTitle">
         <i></i>
         <span>Advantages</span>
         <p>Next Generation Decentralized Application Platform</p>
@@ -302,56 +305,67 @@
     <div class="advantagesContainer">
         <ul>
             <li>
-                <i></i>
-                <span></span>
-                <p class="advantagesContainerText1">Cost.</p>
-                <p class="advantagesContainerText2">Developers can customize a gas token to effectively control group
-                    operation costs and user CTU.</p>
-                <div class="advantagesContainerSupernatant"></div>
+                <div class="advantageItemContainer">
+                    <div class="advantagesContainerSupernatant"></div>
+                    <i></i>
+                    <span></span>
+                    <p class="advantagesContainerText1">Low Cost</p>
+                    <p class="advantagesContainerText2">Developers can customize a gas token, which can effectively control operation costs.</p>
+                </div>
             </li>
             <li>
-                <i></i>
-                <span></span>
-                <p class="advantagesContainerText1">Safe.</p>
-                <p class="advantagesContainerText2">
-                    PBFT enhanced DPOS,
-                    Multi-layered payment passwords,
-                    Applications are isolated to prevent error spreading,
-                    Sandbox mode can manage untrusted application code.
-                </p>
-                <div class="advantagesContainerSupernatant"></div>
+                <div class="advantageItemContainer">
+                    <div class="advantagesContainerSupernatant"></div>
+                    <i></i>
+                    <span></span>
+                    <p class="advantagesContainerText1">Safety</p>
+                    <p class="advantagesContainerText2">
+                        PBFT enhanced DPOS. Multi-level payment passwords. Applications are isolated to prevent error spreading. Sandbox mechanism can manage untrusted code.</p>
+                </div>
             </li>
             <li>
-                <i></i>
-                <span></span>
-                <p class="advantagesContainerText1">Multiplexing.</p>
-                <p class="advantagesContainerText2">The main-chain is fundamental to sharing data among different
-                    applications.</p>
-                <div class="advantagesContainerSupernatant"></div>
+                <div class="advantageItemContainer">
+                    <div class="advantagesContainerSupernatant"></div>
+                    <i></i>
+                    <span></span>
+                    <p class="advantagesContainerText1">Reuseability</p>
+                    <p class="advantagesContainerText2">Applications can sharing data on Asch platform. Furthermore, they can reused assets on different blockchains.</p>
+                    <!--<div class="advantagesContainerSupernatant"></div>-->
+                </div>
+
             </li>
             <li>
-                <i></i>
-                <span></span>
-                <p class="advantagesContainerText1">Flexibility.</p>
-                <p class="advantagesContainerText2">Asset and application decoupled. One token on a multi-chain. One
-                    chain with a multi-token.</p>
-                <div class="advantagesContainerSupernatant"></div>
+                <div class="advantageItemContainer">
+                    <div class="advantagesContainerSupernatant"></div>
+                    <i></i>
+                    <span></span>
+                    <p class="advantagesContainerText1">Flexibility</p>
+                    <p class="advantagesContainerText2">Assets and applications are decoupled. One token can be used on multi-chains, and one chain can hold multiple tokens.</p>
+                    <!--<div class="advantagesContainerSupernatant"></div>-->
+                </div>
+
             </li>
             <li>
-                <i></i>
-                <span></span>
-                <p class="advantagesContainerText1">Easy-To-Use.</p>
-                <p class="advantagesContainerText2">ORM and SmartDB features, ECMASCRIPT 6 standard, and a development
-                    mode similar to traditional web applications. All of these features lower the development threshold
-                    of blockchain technology.</p>
-                <div class="advantagesContainerSupernatant"></div>
+                <div class="advantageItemContainer">
+                    <div class="advantagesContainerSupernatant"></div>
+                    <i></i>
+                    <span></span>
+                    <p class="advantagesContainerText1">Usability</p>
+                    <p class="advantagesContainerText2">Based on JavaScript stack,SDK supports advanced features like ORM、SmartDB etc that make DAPP development more easier.</p>
+                    <!--<div class="advantagesContainerSupernatant"></div>-->
+                </div>
+
             </li>
             <li>
-                <i></i>
-                <span></span>
-                <p class="advantagesContainerText1">Performance.</p>
-                <p class="advantagesContainerText2">1500 transactions per second (TPS); fragment; parallel</p>
-                <div class="advantagesContainerSupernatant"></div>
+                <div class="advantageItemContainer">
+                    <div class="advantagesContainerSupernatant"></div>
+                    <i></i>
+                    <span></span>
+                    <p class="advantagesContainerText1">Performance</p>
+                    <p class="advantagesContainerText2">More than 1500 transactions per second, performance is scalable by fragment and parallel.</p>
+                    <!--<div class="advantagesContainerSupernatant"></div>-->
+                </div>
+
             </li>
         </ul>
     </div>
@@ -518,7 +532,7 @@
                         manage XAS and other Asch-platform asset.</p>
                     <div class="dlistBtns">
                         <a href="http://downloads.asch.cn/Asch-PC-wallet/asch-wallet-with-jre_V1.0.3.zip">Download</a>
-                        <a href="javascript:;"><span>More</span></a>
+                        <a href="https://github.com/AschPlatform"><span>More</span></a>
                     </div>
                 </li>
                 <li>
@@ -532,7 +546,7 @@
                         for advanced users who need all the platform functions.</p>
                     <div class="dlistBtns">
                         <a href="http://o7dyh3w0x.bkt.clouddn.com/AschLiteClient1.3.1.zip">Download</a>
-                        <a href="javascript:;"><span>More</span></a>
+                        <a href="https://github.com/AschPlatform"><span>More</span></a>
                     </div>
                 </li>
                 <li>
@@ -547,21 +561,22 @@
                         recomended).</p>
                     <div class="dlistBtns">
                         <a href="https://www.asch.io/downloads/asch-linux-latest-mainnet.tar.gz">Download</a>
-                        <a href="javascript:;"><span>More</span></a>
+                        <a href="https://github.com/AschPlatform"><span>More</span></a>
                     </div>
                 </li>
                 <li>
                     <h4>Mobile wallet</h4>
                     <div class="dlistContainer">
-                        <span>MD5: Download sevice has not open yet</span>
-                        <!--<span>Version: 1.0.3 Size: 75M</span>-->
+                        <span>MD5: 79e5dc7e517df9ed7a20ad2879eec0e9
+</span>
+                        <span>Version:1.0.9 size:24M</span>
                     </div>
                     <p>It is an mobile application which supports multi-account, multi-asset and Asch platform DAPP in
                         both Android and iOS platform which is in development. It is suitable for normal users who have
                         XAS and other assets on Asch platform.</p>
                     <div class="dlistBtns">
-                        <a href="javascript:;">Download</a>
-                        <a href="javascript:;"><span>More</span></a>
+                        <a title="For Android" href="http://asch-public.oss-cn-beijing.aliyuncs.com/appupdate/android/app-release.apk">Download</a>
+                        <a href="https://github.com/AschPlatform"><span>More</span></a>
                     </div>
                 </li>
             </ul>
@@ -572,7 +587,7 @@
 <div class="section" id="media">
     <div class="sectionTop">
         <i></i>
-        <span>Media</span>
+        <span>Partners</span>
         <p>Next Generation Decentralized Application Platform</p>
     </div>
     <div class="mediaContainer">
@@ -611,14 +626,6 @@
                 <li>
                     <i></i>
                     <a href="javascript:;">654910113</a>
-                </li>
-                <li>
-                    <a href="https://github.com/AschPlatform">
-                        <i></i>
-                    </a>
-                    <a href="https://explorer.asch.io/">
-                        <i></i>
-                    </a>
                 </li>
             </ul>
         </div>

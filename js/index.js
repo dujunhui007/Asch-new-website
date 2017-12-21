@@ -46,11 +46,11 @@ $(document).ready(
     $(this).parents(".downloadsContainerLeft").find(".dlsit-list li").eq(index).show().siblings().hide();
   }),
 
-  $(".homeLinks").click(function () {
-    window.location.href = "aschVideo.html";
-  }),
+  // $(".homeLinks").click(function () {
+  //   window.location.href = "aschVideo.html";
+  // }),
 
-  $("#introduction .aschVideo .topVideo").click(function () {
+  $("#introduction .aschVideo").click(function () {
     window.location.href = "aschVideo.html";
   })
 
